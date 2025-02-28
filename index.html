@@ -10,18 +10,20 @@
             scroll-behavior: smooth;
         }
         body {
-            margin: 0;              
+            margin: 0 auto;              
             height: 100vh;          
             position: relative;     
             font-family: 'Zen Kurenaido';
             background-color: #dacfdf;
         }
         .div1 {
-            position:absolute;     
-            left: 30%;
+            display: flex; 
+            justify-content: center; 
+            width: 100%; 
             text-align: center;
-            color: #383E44;         
+            color: #383E44;
         }
+
        .main {
             background-color: #383E44;
             padding: 3px;
@@ -41,39 +43,19 @@
             background-color: #575757;
             border-radius: 3px;
         }
-        .div2 {
-            background-color: #dacfdf69;
-            position: relative;
-            top: 120px;
-            margin-bottom: 30px;
-        }
-        .div3 {
-            background-color: #dacfdf69;
-            position: relative;
-            top: 0px;
-            margin-bottom: 30px;
-        }
-        .div3 {
-            background-color: #dacfdf69;
-            position: relative;
-            top: 0px;
-            margin-bottom: 30px;
-        }
-        hr {
-            height: 3px;
-            background-color: #383E44;
-            margin-bottom: 30px;
-            margin-right: 20px;
+        .wrap-gallery-grid-10-2024 {
+            display: flex;
+            justify-content: center; 
+            width: 100%; 
         }
         .gallery-grid-10-2024 {
+            justify-self: center;
             display: grid;
             grid-template-columns: repeat(4, 1fr); 
             gap: 10px; 
-            width: 90%;
-            max-width: 800px;
-            margin: 100px auto;
-            clear: both; 
-            margin-top: 15%;
+            max-width: 800px; 
+            padding-top: 3%;
+            margin: 0 auto;
         }
         .gallery-grid-10-2024 img {
             width: 100%; 
@@ -85,6 +67,15 @@
         .gallery-grid-10-2024 :hover {
             transform: scale(1.2);
         }
+        .para1 {
+            margin-top: 5%;
+            background-color: #c6acd1;
+            border-radius: 5px;
+            margin: 0 auto;
+            justify-content: center;
+            text-align: center;
+            max-width: 800px;
+        }
     </style>
 </head>
 <body>
@@ -92,18 +83,27 @@
         <nav class="main">
             <ul>
                 <a href="https://twitter.com/haru1616iro" target="_blank">Twitter</a>
-                <a href="https://www.youtube.com/@haru1616iro" target="_blank">music/video works（YouTube）</a>
                 <a href="https://piapro.jp/haruiroiro" target="_blank">Piapro</a>
                 ✉:hareten2727@gmail.com
             </ul>
         </nav>
     </header>
-    <div class="div1" style="position: absolute; margin-bottom: 30px;">
-    <div class="div2" style="margin-bottom: 30px;" id="2024-10">
-       <h3 style="left: 5%; color: #383E44; margin-bottom: 15px;">（初）</h3>
-       <hr style="height: 3px; background-color: #383E44;">
+    <div class="para1">
+        <p>Oscar Wilde once wrote in one of his works, that people nowadays know the price of everything and value of nothing. 
+            In every kind of view, he was not wrong in any sentences. Whether it's incorrect because now is no longer 'nowadays', 
+            or society have forgotten the shells from which they came. Either way, Wilde was not wrong.</p>
+        <p>かげろうが、ただ気持ちの幻想。魚になっても、生きる意味まだ知りません。
+            どっちが好き、どっちが嫌い、
+            あと最後に、気持ちの生まれた場所は誰も知らない。
+        </p>
+        <p>"the drawings. what's the purpose?" asked Hal.</p>
+        <p>"..."</p>
     </div>
-    <div class="gallery-grid-10-2024" style="left: 20%;">
+    <div class="div1">
+        <p><b>2024</b></p>
+        <hr width="6px" color="#575757">
+<div class="wrap-gallery-grid-10-2024">
+    <div class="gallery-grid-10-2024">
         <a href="https://x.com/haru1616iro/status/1863146443361644753" target="_blank">
             <img src="https://pbs.twimg.com/media/Gds5y7CW0AA_uGS?format=jpg&name=large">
         </a>
@@ -162,10 +162,7 @@
             <img src="https://pbs.twimg.com/media/GbNUHr_akAEHXkn?format=jpg&name=large">
         </a>
     </div>
+    </div>
+</div>
 </body>
-<footer>
-    <h4>
-    ▨ All rights reserved
-    </h4>
-</footer>
 </html>
